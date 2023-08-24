@@ -1,0 +1,12 @@
+import random
+cardfaces = ["A","1","2","3","4","5","6","7","8","9","10","J","Q","K"]
+suits = ["Hearts","Diamonds","Clubs","spades"]
+deck=[]
+for k in range(4):
+    for l in range(13):
+        card = (cardfaces[l] + "of" + suits[k])
+        deck.append(card)
+random.shuffle(deck)
+
+for m in range(52):
+    print(deck[m])
